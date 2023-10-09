@@ -1,0 +1,306 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "hero"
+    "footer";
+}
+
+#page{
+    display: grid;
+    grid-area: hero;
+    grid-template-areas: 
+    "boas"
+    "cont1"
+    "cont2"
+    "cont3"
+    "cont4"
+    "sugest";
+}
+
+#Cartas{
+    height: 40rem;
+    background-color: #ffdfdf;
+    position: relative;
+}
+
+#Casual{
+    grid-area: cont2;
+    height: 40rem;
+    background-color: #dce0e6;
+    position: relative;
+}
+
+#Classicos{
+    grid-area: cont3;
+    height: 40rem;
+    background-color: #e7ebb0;
+    position: relative;
+}
+
+#RPG{
+    grid-area: cont4;
+    height: 40rem;
+    background-color: #f1ddc9;
+    position: relative;
+}
+
+/* CONTEUDO CARTAS */
+
+#Cartas .title-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #9a151a;
+}
+
+#Cartas h2{
+    font-family: 'Jacques Francois Shadow', cursive;
+    color: #fff;
+    font-weight: 100;
+}
+
+#Cartas .title-container p{
+    font-family: Jacques Francois Shadow;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    color: #fff;
+    padding: 0 1rem;
+    border-left: 2px #fff ridge;
+    border-right: 2px #fff ridge;
+}
+
+.title-container #cartas-img{
+    width: 13.4rem;
+    height: 13.4rem;
+    margin: 2rem auto 3rem;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    rotate: -130deg;
+    opacity: 15%;
+
+    transition: all 0.3s ease-in, rotate 0.5s ease;
+}
+
+#Cartas .title-container:hover #cartas-img{
+    opacity: 1;
+    filter: drop-shadow(8px 8px 60px #ffa1a1);
+    width: 18rem;
+    height: 18rem;
+    top: 38%;
+    left: 20.5%;
+    rotate: 1deg;
+}
+
+#Cartas .product-card{
+    background-color: #e1313d ;
+}
+
+#Cartas .product-card:hover{
+    box-shadow: 10px 10px 0px #b9030f;
+}
+
+/* CONTEUDO CASUAL */
+
+#Casual .title-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #2b4c7e;
+}
+
+#Casual h2{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 100;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+
+#Casual .title-container p{
+    font-family: arvo;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    color: #fff;
+    padding: 0 1rem;
+    border-left: 2px #fff double;
+    border-right: 2px #fff double;
+}
+
+#Casual .title-container img{
+    width: 13rem;
+    height: 13rem;
+    margin: 2rem auto 3rem;
+    transition: all 0.4s ease;
+    position: absolute;
+    top: 58%;
+    left: 28%;
+    filter: saturate(0);
+
+    transition: all 0.2s ease-in;
+}
+
+#Casual .title-container:hover img{
+    filter: saturate(1);    
+    animation: treme 0.1s;
+    animation-iteration-count: 3;
+}
+
+@keyframes treme {
+  0% {margin-left: 0;}
+  25% {margin-left: 5px;}
+  50% {margin-left: 0;}
+  75% {margin-left: -5px;}
+  100% {margin-left: 0;}
+}
+
+#Casual .product-card{
+    background-color: #84abaa
+;
+}
+#Casual .product-card:hover{
+    box-shadow: 10px 10px 0px #567ebb;
+}
+
+/* Conteudo CLÁSSICOS */
+
+#Classicos .title-container{
+    background-color: #0c0d05;
+}
+
+#Classicos .title-container h2{
+    font-family: 'Kurale', serif;
+    color: #e7ebb0;
+}
+
+#Classicos .title-container p{
+    font-family: 'Kurale', serif;
+    color: #c6c99d;
+    padding: 0 1rem;
+    border-left: 2px #e7ebb0 dotted;
+    border-right: 2px #e7ebb0 dotted;
+}
+
+#rei{
+    width: 13rem;
+    height: 13rem;
+    margin: 6rem auto auto;
+    left: 27%;
+    position: absolute;
+    filter: invert(100%);
+
+    transition: all 0.3s ease, z-index 0s ease;
+}
+
+#Classicos .title-container:hover #rei{
+    margin: 2rem auto auto;
+    left: 27%;
+    position: absolute;
+    filter: invert(70%);
+}
+
+#Classicos #classicos-animation{
+    position: relative;
+    height: 20rem;
+}
+
+#Classicos #classicos-animation img{
+    margin-top: 9rem;
+    width: 9rem;
+    height: 9rem;
+    position: absolute;
+    margin: 1rem auto auto;
+    left: 33%;
+    opacity: 0;
+
+    transition: all 0.3s ease;
+}
+
+#Classicos .title-container:hover #torre1{
+    left: 0%;
+    margin: 9rem auto auto;
+    opacity: 1;
+    filter: invert(100%);
+
+    z-index: 1;
+}
+
+#Classicos .title-container:hover #pino1{
+    left: 25%;
+    margin: 9.7rem auto auto;
+    opacity: 1;
+    filter: invert(100%);
+
+    z-index: 1;
+}
+
+#Classicos .title-container:hover #pino2{
+    left: 45%;
+    margin: 9.7rem auto auto;
+    opacity: 1;
+    filter: invert(100%);
+
+    z-index: 1;
+}
+
+#Classicos .title-container:hover #torre2{
+    left: 70%;
+    margin: 9rem auto auto;
+    opacity: 1;
+    filter: invert(100%);
+
+    z-index: 1;
+}
+
+#Classicos .product-card{
+    background-color: #a8ab84;
+}
+
+#Classicos .product-card:hover{
+    box-shadow: 10px 10px 0px #0c0d05;
+}
+
+/* CONTEUDO RPG */
+
+#RPG .title-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #da5a09;
+}
+
+#RPG h2{
+    font-family: 'Almendra SC', serif;
+    color: #21091e;
+}
+
+#RPG .title-container p{
+    font-family: 'Almendra SC', serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #21091e;
+    border-left: 2px var(--corDefault) dashed;
+    border-right: 2px var(--corDefault) dashed;
+}
+
+#RPG .title-container img{
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem auto 3rem;
+    filter: saturate(10%);
+
+    transition: all 0.4s ease;
+}
+
+#RPG .title-container:hover img{
+    width: 16rem;
+    height: 16rem;
+    rotate: 360deg;
+    filter: saturate(110%);
+}
+
+#RPG .product-card{
+    background-color: #f07b32;
+}
+
+#RPG .product-card:hover{
+    box-shadow: 10px 10px 0px #21091e;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Lucas Lopes">
+  <meta name="description" content="Loja online de Boardgame">
+  <meta name="keywords" content="Jogos, Tabuleiro, Boardgames">
+
+  <title>PlayTable-Store</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/css/all.css">
+  <link rel="stylesheet" href="" id="siteCss">
+
+  <!-- Ícone -->
+  <link rel="icon" type="image/x-icon" href="../imgs/Favicon.png">
+  <script src="https://kit.fontawesome.com/a551d8020a.js" crossorigin="anonymous"></script>
+
+  <!-- Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YC4HBVXW8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3YC4HBVXW8');
+  </script>
+  
+  <!-- Javascript -->
+  <script src="./src/main.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <nav class="navegation">
+      <a href="/"><img src="../imgs/3.webp" alt="Logotipo do site" class="Logotipo"></a>
+      <form id="search-bar">
+        <input type="text" placeholder="Pesquisa...">
+        <button form="search-bar" type="submit" name="goSearch">Go!</button>
+      </form>
+      <ul>
+        <li><a href="/" onclick="window.route()" id="home">Início</a></li>
+        <li><a href="/products" onclick="window.route()" id="products">Produtos</a></li>
+        <li><a href="/about" onclick="window.route()" id="about">Sobre</a></li>
+        <li><a href="/teacher" onclick="window.route()" id="teacher">Professor</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div id="page"></div>
+  
+  <!-- Rodapé -->
+  <footer>
+    <address>
+    </address>
+  </footer>
+</body>
+</html>

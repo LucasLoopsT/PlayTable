@@ -1,0 +1,19 @@
+{
+  "name": "playtable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "Lucas Lopes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "lite-server": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

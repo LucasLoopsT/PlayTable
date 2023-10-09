@@ -1,0 +1,177 @@
+body{
+  display: grid;
+  grid-template-areas:
+  "header"
+  "hero"
+  "footer";
+}
+
+#page{
+  display: grid;
+  grid-area: hero;
+  grid-template-areas: 
+  "boas"
+  "cont1"
+  "cont2"
+  "cont3"
+  "sugest";
+}
+
+#Bem-vindo-Icon {
+  padding: 0!important;
+}
+
+#first-list{
+  grid-area: cont1;
+  display: flex;
+  height: 48rem;
+  margin-bottom: 4rem;
+}
+
+#first-list h2{
+  color: white;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(121,9,9,1) 57%, rgba(255,166,0,1) 100%);
+}
+
+#first-list h2 span{
+  color: var(--cor1);
+}
+
+/* Diferencial */
+.pontos{
+  grid-area: cont2;
+  width: 100rem;
+  height: 42rem;
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0 auto;
+}
+
+.pontos h2{
+  font-size: 7rem;
+  font-family: 'Bungee Spice', cursive;
+  text-align: center;
+  background-color: transparent;
+}
+
+.pontos ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+
+.pontos li{
+  width: 25rem;
+  height: 30rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 15rem 15rem 0 0;
+
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: arvo;
+  list-style: none;
+}
+
+.pontos li:nth-child(2){
+  margin-top: 5rem;
+  border-left: solid 2px #adadad; 
+  border-right: solid 2px #adadad; 
+}
+
+.pontos .icon_pontos{
+  width: 7.5rem;
+  height: 7.5rem;
+  background-size: 7.5rem;
+  background-color: transparent;
+}
+
+.pontos li p{
+  font-family: arvo;
+  text-align: center;
+  color: var(--cor2);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 2rem;
+  width: 18rem;
+}
+
+.pontos li p b{
+  font-weight: bolder;
+  color: var(--cor2-Darker);
+}
+
+/* Destaques */
+
+#Destaques{
+  grid-area: cont3;
+  background-color: var(--cor2);
+  height: 22rem;
+}
+
+#Destaques h2{
+  color: var(--cor2);
+}
+
+#Destaques .section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+}
+
+#Destaques .section a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 2rem;
+}
+
+#Destaques li{
+  list-style: none;
+}
+
+#Cards-link{
+  font-size: 4rem;
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Jacques Francois Shadow', cursive;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #000;
+}
+
+#Casual-link{
+  font-size: 4rem;
+  text-decoration: none;
+  color: transparent;
+  font-family: 'Shrikhand', cursive;
+  font-weight: 100;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+}
+
+#Classicos-link{
+  font-size: 4rem;
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Kurale', serif;
+}
+
+#RPG-link{
+  font-size: 5rem;
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Bigelow Rules', cursive;
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: #000;
+}
+
+#Destaques .section img{
+  width: 7rem;
+  height: 7rem;
+  margin: auto;
+}

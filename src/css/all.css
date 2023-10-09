@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Arvo&family=Bebas+Neue&family=Bigelow+Rules&family=Bungee+Outline&family=Bungee+Spice&family=IM+Fell+DW+Pica&family=Jacques+Francois+Shadow&family=Kurale&family=Nosifer&family=Roboto+Slab:wght@500;700&family=Secular+One&family=Shrikhand&family=UnifrakturMaguntia&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --corPri: ;
+  --cor1: #ff2828;
+  --cor2: #ff8928;
+  --cor2-Darker: #b94e19;
+  --cor3: #f5cd2c;
+  --cor3-Darker:#a18720;
+  --cor3-Lighter: #f6da68;
+  --corBG: #dddfe1;
+  --corBG-Darker: #bbbbbb;
+  --corDefault: #0f0c0b;
+
+  --margin-min: 2rem;
+  --margin-ok: 4rem;
+  --margin-plus: 8rem;
+}
+
+body{
+  background-color: var(--corBG);
+}
+
+#page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: hero;
+  margin: 0 auto;
+}
+
+.navPressed{
+  color: var(--cor3);
+  text-decoration: underline;
+  border: var(--cor3) solid .2rem;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 0 rgb(255, 137, 40);
+}
+
+/* Nav */
+
+header {
+  grid-area: header;
+  width: 100%;
+  height: 10rem;
+}
+
+nav {
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  box-shadow: 0 0 .7rem black;
+}
+
+nav img {
+  width: 10rem;
+  height: 10rem;
+  border: transparent .1rem solid;
+  border-radius: 50%;
+  box-shadow: 0 1rem 20rem transparent;
+
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+nav img:hover {
+  width: 11rem;
+  height: 11rem;
+  border: #f5cd2c .3rem solid;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 rgb(255, 40, 40);
+}
+
+nav form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav input{
+  width: 30rem;
+  height: 5rem;
+  background-color: var(--corBG);
+  padding-left: 1rem;
+  border: 0.2rem solid var(--corBG-Darker);
+  border-right: none;
+  outline: none;
+  border-radius: 0.8rem 0 0 0.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav input:focus{
+  border: 0.2rem solid var(--corDefault);
+  border-right: none;
+}
+
+nav button{
+  width: 4.5rem;
+  height: 5rem;
+  background-color: var(--cor3-Lighter);
+  border: 0.2rem solid var(--cor3-Darker);
+  border-radius: 0 0.8rem 0.8rem 0;
+  cursor: pointer;
+
+  font-family: 'FontAwesome';
+  color: var(--cor3-Darker);
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+nav button:hover{
+  background-color: var(--cor3);
+  color: var(--corDefault);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+  
+nav li {
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+  
+nav li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: 'Secular One', sans-serif;
+  box-shadow: 0 0 5rem transparent;
+
+  transition: all 0.3s ease;
+}
+    
+nav li a:hover {
+  color: var(--cor3);
+  text-decoration: underline;
+  border: var(--cor3) solid .2rem;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 0 rgb(255, 137, 40);
+}
+  
+/* Boas Vindas */
+
+#Bem-vindo {
+  grid-area: boas;
+  display: block;
+  background-color: #ff3131;
+  width: 93rem;
+  height: 35rem;
+  margin: -4rem auto var(--margin-plus);
+  border-radius: 0 0 50rem 2rem;
+  border: solid .4rem black;
+  z-index: -1;
+}
+
+.responsive{
+  display: flex;
+}
+
+#Bem-vindo h1, #Bem-vindo h2 {
+  font-size: 3rem;
+  font-family: 'Kurale';
+  text-align: inherit;
+  width: 60rem;
+  height: auto;
+  margin-top: 9rem;
+  margin-left: 3rem;
+}
+
+#Bem-vindo h2{
+  margin-top: 0;
+}
+
+#Bem-vindo img {
+  width: 25rem;
+  height: 25rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: solid .4rem black;
+  margin: 7rem auto auto;
+  padding: 2rem;
+}
+
+/* Sugestões */
+
+#Sugestoes {
+  grid-area: sugest;
+  display: flex;
+  background-color: rgb(233, 222, 255);
+  width: 80%;
+  height: 35rem;
+  text-align: center;
+  z-index: 1;  
+}
+  
+#Sugestoes .title-container {
+  width: 22rem;
+  background-color: blueviolet;
+  border-radius: .8rem 0 0 .8rem;
+  position: relative;
+  z-index: 1;
+}
+  
+#Sugestoes h2 {
+  width: 22rem;
+  color: #ffffff;
+  background-color: transparent;
+}
+  
+#joker {
+  width: 23rem;
+  height: 23rem;
+  rotate: -10deg;
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+  z-index: 1;
+  position: relative;
+
+  transition: all 0.3s ease;
+}
+  
+#joker-black {
+  width: 23rem;
+  height: 23rem;
+  rotate: -10deg;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  filter: brightness(0%);
+  z-index: 0;
+  position: absolute;
+  left: 2rem;
+  top: 7.5rem;
+
+  transition: all 0.3s ease;
+}
+
+#joker:hover + #joker-black {
+  width: 25rem;
+  height: 25rem;
+
+  margin-top: 1.5rem;
+  margin-left: -1.5rem;
+  rotate: -6deg;
+}
+
+#joker:hover {
+  width: 25rem;
+  height: 25rem;
+  rotate: -7deg;
+}
+
+#Sugestoes #content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin: auto;
+}
+
+#content-container p {
+  font-size: 2rem;
+  font-family: arvo;
+  width: 85%;
+  margin: auto;
+}
+
+#content-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+#content-container form label {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+}
+
+#content-container form textarea {
+  width: 50rem;
+  height: 9rem;
+  outline-color: black;
+  border-radius: .8rem .8rem 0 0;
+  resize: none;
+  padding: 1rem;
+}
+
+#content-container button {
+  padding: .5rem;
+  outline: none;
+  border: black .2rem solid;
+  border-radius: .5rem;
+  width: 20rem;
+  background-color: mediumpurple;
+  margin: .5rem auto auto;
+  color: #000000;
+  font-family: 'Secular One';
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+#content-container button:hover {
+  background-color: rgb(80, 37, 167)
+}
+
+.submit_icon {
+  color: #000000;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  margin-top: 5.8rem;
+  margin-left: 34.8rem;   
+}
+
+/* Rodapé Footer */
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  height: 10rem;
+  color: #ebdbdb;
+}
+
+footer address {
+  margin: 3.5rem 2rem auto;
+  font-size: 1.5rem;
+}
+
+/* /////////////////////CONTAINERS///////////////////////// */
+/* /////////////////////CONTAINERS///////////////////////// */
+/* /////////////////////CONTAINERS///////////////////////// */
+
+/* Container 1 - titulo no topo */
+
+.container-style1{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 98%;
+  height: 20rem;
+  border-radius: .8rem;
+  box-shadow: 0px 0px 5px black;
+  margin: auto;
+  margin-bottom: var(--margin-ok);
+}
+
+.container-style1 h2{
+  font-size: 4rem;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  background-color: var(--corDefault);
+  padding: 2rem;
+}
+
+/* Container 2 - titulo a esquerda */
+
+.container-style2{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 98%;
+  height: 20rem;
+  border-radius: .8rem;
+  box-shadow: 0 0 .5rem black;
+  margin: auto;
+  margin-bottom: var(--margin-ok);
+}
+
+.container-style2 .title-container{
+  border-radius: .8rem 0 0 .8rem;
+}
+
+/* Container 3 - titulo a direita */
+
+.container-style3{
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+  width: 98%;
+  height: 20rem;
+  border-radius: .8rem;
+  box-shadow: 0 0 .5rem black;
+  margin: auto;
+  margin-bottom: var(--margin-ok);
+}
+
+.container-style3 .title-container{
+  border-radius: 0 .8rem .8rem 0;
+}
+
+/* Preview do container - titulo/texto */
+
+.title-container{
+  background-color: var(--corDefault);
+  width: 30rem;
+  position: relative;
+}
+
+.title-container h2{
+  font-size: 4rem;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  margin: 2rem auto 0;
+}
+
+.title-container p{
+  font-size: 1.5rem;
+  font-family: arvo;
+  width: 25rem;
+  text-align: center;
+  margin: 3rem auto 0;
+}
+
+/* /////////////////////PRODUTOS///////////////////////// */
+/* /////////////////////PRODUTOS///////////////////////// */
+/* /////////////////////PRODUTOS///////////////////////// */
+
+/* Cards */
+
+.products-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.product-card{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  align-self: center;
+  
+  width: 14rem;
+  height: 30rem;
+  margin: 5rem 2rem;
+  background-color: #dfdfdf;
+  border-radius: 2.5rem .2rem;
+  opacity: 0.6;
+
+  transition: all 0.2s ease;
+}
+
+.product-card:hover{
+  opacity: 1;
+  box-shadow: 10px 10px 0px orangered;
+}
+
+.product-card h3{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  font-family: 'Secular One', sans-serif;
+}
+
+.rate_img{
+  background: url("../../imgs/5estrelas.webp");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  width: 7.5rem;
+  height: 7.5rem;
+  background-size: 7.5rem;
+}
+
+.game_img{
+  width: 12rem;
+  height: 12rem;
+  background-size: 10.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: unset;
+
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.414);
+}
+
+.product-card p {
+  font-size: 1.5rem;
+  font-family: arvo;
+  color: #000000;
+  margin: 1.5rem auto auto;
+  align-self: end;
+}
+
+/* Some Layouts */
+
+.p_layout{
+  margin: .5rem auto!important;
+}
+
+/* For titles with one line */
+.rate_layout{
+  margin: .8rem auto!important;
+}
+
+/* For titles with two lines */
+.h3_layout{
+  margin-top: 1.3rem!important;
+}
+
+/* /////////////////////ANIMATIONS///////////////////////// */
+/* /////////////////////ANIMATIONS///////////////////////// */
+/* /////////////////////ANIMATIONS///////////////////////// */
+
+.fadeInDown{
+  animation-delay: 0.2s;
+}
+
+.zoomIn{
+  animation-delay: 0.5s;
+}
+

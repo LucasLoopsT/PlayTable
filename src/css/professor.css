@@ -1,0 +1,98 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "hero"
+    "footer";
+}
+  
+#page{
+    display: grid;
+    grid-area: hero;
+    grid-template-areas: 
+    "boas"
+    "cont1"
+    "cont2";
+}
+
+/* Conteudo1 */
+#Datas{
+    grid-area: cont1;
+    display: flex;
+    background-color: white;
+    height: 32rem;
+    position: relative;
+}
+
+#Datas h2{
+    color: var(--cor2);
+}
+
+#Datas ul{
+    margin: auto 0;
+}
+
+#Datas li{
+    margin: auto  0 1rem;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: arvo;
+    width: 50rem;
+    border-bottom: 1px gray solid;
+    list-style: none;
+}
+
+#Datas li span{
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+#Datas img{
+    width: 20rem;
+    height: 26.5rem;
+    border: 3px solid var(--corDefault);
+    border-radius: 12px;
+    position: absolute;
+    right: 5rem;
+    bottom: 2rem;
+}
+
+/* Conteudo2 */
+#Infos{
+    grid-area: cont2;
+    display: flex;
+    background-color: white;
+}
+
+#Infos .title-container{
+    display: flex;
+    align-items: center;    
+    color: var(--cor3);
+}
+
+#Infos .title-container h2{
+    margin: 0 auto;
+}
+
+#Infos ul{
+    margin: 3.5rem 0 0;
+}
+
+#Infos li{
+    margin: auto  0 1rem;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: arvo;
+    width: 50rem;
+    border-bottom: 1px gray solid;
+    list-style: none;
+}
+
+#Infos li span{
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+#Infos li a{
+    color: #000000;
+}

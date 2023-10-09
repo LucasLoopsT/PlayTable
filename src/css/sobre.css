@@ -1,0 +1,30 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "hero"
+    "footer";
+}
+  
+#page{
+    display: grid;
+    grid-area: hero;
+    grid-template-areas: 
+    "boas"
+    "cont1"
+}
+
+#Sobre{
+    grid-area: cont1; 
+    height: 50rem; 
+}
+
+#Sobre h2{
+    color: #7683ff;
+}
+
+#Sobre p{
+    font-family: 'IM Fell DW Pica';
+    font-size: 2rem;
+    margin: auto 2rem;
+}
