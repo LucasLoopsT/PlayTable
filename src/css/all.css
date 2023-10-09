@@ -361,6 +361,7 @@ footer address {
   text-align: center;
   background-color: var(--corDefault);
   padding: 2rem;
+  border-radius: .8rem .8rem 0 0;
 }
 
 /* Container 2 - titulo a esquerda */

@@ -123,7 +123,7 @@ router.add("/RPG", "./src/pages/produtos.html");
 
 router.add("/about", "./src/pages/sobre.html");
 router.add("/teacher", "./src/pages/professor.html");
-// router.add(404, "/pages/404.html");
+router.add(404, "./src/pages/404.html");
 
 router.handle();
 window.onpopstate = () => router.handle();
