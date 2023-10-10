@@ -74,7 +74,7 @@ class Rounter extends Nav{
     handle(){
         const {pathname} = window.location;
         const route = this.routes[pathname] || this.routes[404];
-        if(pathname == "/"){
+        if(pathname == "/PlayTable/"){
             this.nav.homePressed();
         }
         if(pathname == "/products"){
