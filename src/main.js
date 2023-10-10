@@ -113,15 +113,15 @@ class Rounter extends Nav{
 }
 
 const router = new Rounter();
-router.add("/", "./pages/home.html");
-router.add("/products", "/src/pages/produtos.html");
+router.add("/", "/PlayTable/src/pages//home.html");
+router.add("/products", "/PlayTable/src/pages/produtos.html");
 
-router.add("/Cartas", "./src/pages/produtos.html");
-router.add("/Casual", "./src/pages/produtos.html");
-router.add("/Classics", "./src/pages/produtos.html");
-router.add("/RPG", "./src/pages/produtos.html");
+router.add("/Cartas", "/PlayTable/src/pages/produtos.html");
+router.add("/Casual", "./PlayTable/src/pages/produtos.html");
+router.add("/Classics", "./PlayTable/src/pages/produtos.html");
+router.add("/RPG", "./PlayTable/src/pages/produtos.html");
 
-router.add("/about", "./PlayTable/src/pages/sobre.html");
+router.add("/about", "/PlayTable/src/pages/sobre.html");
 router.add("/teacher", "/PlayTable/src/pages/professor.html");
 router.add(404, "./src/pages/404.html");
 
