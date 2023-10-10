@@ -113,7 +113,7 @@ class Rounter extends Nav{
 }
 
 const router = new Rounter();
-router.add("/", "pages/home.html");
+router.add("/", "./pages/home.html");
 router.add("/products", "./src/pages/produtos.html");
 
 router.add("/Cartas", "./src/pages/produtos.html");
