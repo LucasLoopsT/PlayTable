@@ -11,7 +11,7 @@ class Nav {
         this.aboutNav.classList.remove("navPressed");
         this.teacherNav.classList.remove("navPressed");
 
-        this.cssLink.href = "./src/css/index.css";
+        this.cssLink.href = "/PlayTable/src/css/index.css";
     }
 
     productsPressed(){
@@ -20,7 +20,7 @@ class Nav {
         this.aboutNav.classList.remove("navPressed");
         this.teacherNav.classList.remove("navPressed");
 
-        this.cssLink.href = "./src/css/produtos.css";
+        this.cssLink.href = "/PlayTable/src/css/produtos.css";
     }
 
     aboutPressed(){
@@ -29,7 +29,7 @@ class Nav {
         this.aboutNav.classList.add("navPressed");
         this.teacherNav.classList.remove("navPressed");
 
-        this.cssLink.href = "./src/css/sobre.css";
+        this.cssLink.href = "/PlayTable/src/css/sobre.css";
     }
 
     teacherPressed(){
@@ -38,7 +38,7 @@ class Nav {
         this.aboutNav.classList.remove("navPressed");
         this.teacherNav.classList.add("navPressed");
 
-        this.cssLink.href = "./src/css/professor.css";
+        this.cssLink.href = "/PlayTable/src/css/professor.css";
     }
 
     scrollWhere(coord){
