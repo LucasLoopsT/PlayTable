@@ -94,7 +94,7 @@ class Rounter extends Nav{
         }
         if(pathname == "/RPG"){
             this.nav.productsPressed();
-            this.nav.scrollWhere(1840);
+            this.nav.scrollWhere(1720);
         }
         if(pathname == "/about"){
             this.nav.aboutPressed();
