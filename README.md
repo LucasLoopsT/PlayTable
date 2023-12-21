@@ -25,11 +25,13 @@ This project was developed with the following technologies:
 - Github
 
 
-## 🛠 Melhorias
+## 🛠 Must be fixed
 
 Some things I might do on PlayTable to get better:
 - Responsive
-- ...
+- Some layouts
+
+ If you have any suggestions, let me know! Then I can implement them.
 
 ---
 
