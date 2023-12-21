@@ -8,6 +8,8 @@
 
 💡​ The idea was to build a site that would be colorful and fun. There was only one thing I thought could meet these expectations. It must to be about games!
 
+​🔗​ You can see the PlayTable Store by clicking here: https://lucasloopst.github.io/PlayTable/
+
 # 🖥️​ Preview
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
@@ -25,7 +27,7 @@ This project was developed with the following technologies:
 
 ## 🛠 Melhorias
 
-Some things i might to do on PlayTable:
+Some things I might do on PlayTable to get better:
 - Responsive
 - ...
 
